@@ -7,6 +7,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "react": "^17.0.1",
+    "react-burger-menu": "^3.0.6",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.0.1"
@@ -20,7 +21,7 @@
     "eject": "react-scripts eject",
     "electron": "electron .",
     "start": "nf start -p 5050",
-    "dist": "yarn run react-build && electron-builder ."
+    "dist": "yarn run react-build && electron-builder"
   },
   "build": {
     "extends": null,
