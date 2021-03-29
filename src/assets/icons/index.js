@@ -1,17 +1,3 @@
-import { cilDrop, cilPencil, cilSpeedometer } from "@coreui/icons";
+import { cilApplications, cilDoor, cilHouse ,cilSettings, cilSync } from "@coreui/icons";
 
-// export const icons = Object.assign(
-//   {},
-//   {
-//     sygnet,
-//     logo,
-//     logoNegative,
-//   },
-//   {
-//     cilDrop,
-//     cilPencil,
-//     cilSpeedometer,
-//   }
-// );
-
-export const icons = { cilDrop, cilPencil, cilSpeedometer };
+export const icons = { cilApplications, cilDoor, cilHouse, cilSettings, cilSync };

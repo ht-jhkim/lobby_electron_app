@@ -7,23 +7,17 @@ const _nav = [
     _tag: "CSidebarNavItem",
     name: "메인",
     to: "/",
-    icon: "cil-speedometer",
+    icon: "cil-house",
   },
   {
     _tag: "CSidebarNavTitle",
-    _children: ["설정"],
+    _children: ["클라이언트"],
   },
   {
     _tag: "CSidebarNavItem",
-    name: "설정 변경",
-    to: "/setting",
-    icon: "cil-drop",
-  },
-  {
-    _tag: "CSidebarNavItem",
-    name: "업데이트",
-    to: "/update",
-    icon: "cil-pencil",
+    name: "로비",
+    to: "/lobby",
+    icon: "cil-door",
   },
 ];
 

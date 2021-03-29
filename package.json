@@ -1,6 +1,6 @@
 {
-  "name": "electron-test",
-  "version": "0.1.0",
+  "name": "ht-client",
+  "version": "0.0.2",
   "private": true,
   "dependencies": {
     "@coreui/chartjs": "^2.0.0",
@@ -16,6 +16,7 @@
     "axios": "^0.21.1",
     "classnames": "^2.2.6",
     "core-js": "^3.9.1",
+    "electron-updater": "^4.3.8",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.6",
     "node-sass": "^5.0.0",
@@ -27,6 +28,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "redux": "^4.0.5",
+    "styled-components": "^5.2.1",
     "web-vitals": "^1.0.1"
   },
   "homepage": "./",
@@ -37,10 +39,11 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "electron": "electron .",
-    "start": "nf start -p 5050",
+    "start": "nf start -p 8810",
     "dist": "yarn run react-build && electron-builder"
   },
   "build": {
+    "productName": "HT Client App",
     "extends": null,
     "directories": {
       "buildResources": "public"

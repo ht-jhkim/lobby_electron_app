@@ -1,6 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import { HashRouter, Route, Switch } from "react-router-dom";
+import { createGlobalStyle } from "styled-components";
 import "./scss/style.scss";
+import Regular from "./assets/fonts/NotoSansKR-Regular.otf";
 
 const loading = (
   <div className="pt-3 text-center">
@@ -11,9 +13,22 @@ const loading = (
 // Containers
 const TheLayout = React.lazy(() => import("./containers/TheLayout"));
 
-class App extends Component {
-  render() {
-    return (
+function App() {
+  const GlobalStyle = createGlobalStyle`
+  @font-face {
+    font-family: 'NotoSans-Regular';
+    src: url(${Regular}) format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: auto;
+  }
+  body {
+    font-family: 'NotoSans-Regular';
+  }
+`;
+  return (
+    <>
+      <GlobalStyle />
       <HashRouter>
         <React.Suspense fallback={loading}>
           <Switch>
@@ -21,8 +36,8 @@ class App extends Component {
           </Switch>
         </React.Suspense>
       </HashRouter>
-    );
-  }
+    </>
+  );
 }
 
 export default App;
